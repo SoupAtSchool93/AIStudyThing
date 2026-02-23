@@ -1,7 +1,7 @@
 import time
 name = ""
 score = 0
-mode = 0
+mode = 1
 win = """
 |||        |||   |||||||||||   ||          ||           |||          |||  ||||||||||   ||||||         |||
 |||        |||   |         |   ||          ||           |||          |||     |||       ||||||         |||
@@ -25,5 +25,8 @@ def start():
         print("Hard mode activated... good luck!")
         mode = 2
         level1a()
+    else:
+        print(f"Hello, {name}! Let's start studying!")
 
-def level1a():
+def level1():
+    if mode == 2:
