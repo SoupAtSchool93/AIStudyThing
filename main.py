@@ -32,5 +32,6 @@ def start():
 
 def level1_1():
     if mode == 2:
-        print()
-print(content.questions.test_question.question)
+        print(content.multi_choice.trick_question.question1)
+    else:
+        print(content.multi_choice.normal_questions.question1)
