@@ -5,7 +5,7 @@ def test():
 def ask_multi_choice(question_class):
     """
     ask a multi choice question from content.py
-    input question class should be like "content.questions.multi_choice.normal_questions.question1"
+    input question class should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
     question = question_class()
@@ -27,4 +27,10 @@ def ask_multi_choice(question_class):
     elif not answer == choices[question.answer]:
         print("Wrong!")
         return [False, choices[answer]]
+def ask_written(question_class):
+    """
+    ask a written question from content.py
+    input question class should be like "normal_questions.question1"
+    returns if user got question right, and answer they picked in list: [right=bool, answer=str]
+    """
     
