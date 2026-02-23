@@ -1,6 +1,6 @@
 import time
-import content
-import functions
+from content import questions
+from functions import *
 name = ""
 score = 0
 mode = 1
