@@ -17,9 +17,9 @@ class questions():
                 correct_answer = ""
         class trick_questions():
             class question1():
-                question = "What date was the perceptron tested "
-                wrong_answers = ["","",""]
-                correct_answer = ""
+                question = "What year was the first turing test? 1961, 1965, 1969, or 1963?"
+                wrong_answers = ["1961","1965","1969", "1963"]
+                correct_answer = "1950"
     class written_answer():
         class test_question():
             question = ""
