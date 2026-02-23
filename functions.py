@@ -1,3 +1,4 @@
+import random
 def ask_multi_choice(question_class):
     """
     ask a multi choice question from content.py
@@ -7,5 +8,20 @@ def ask_multi_choice(question_class):
     question = question_class()
     print(question.question)
     counter = 1
+    choices = []
     for i in question.choices:
-        print(f"{i}")
+        choices.append(i)
+    random.shuffle(choices)
+    for i in range(len(choices)):
+        print(f"{counter}. {choices[i]}")
+    counter = 1
+    answered = False
+    while not answered:
+        answer = int(input("Answer (number as shown):"))-1
+    if answer == choices[question.answer]:
+        print("Correct!")
+        return [True, choices[answer]]
+    elif not answer == choices[question.answer]:
+        print("Wrong!")
+        return [False, choices[answer]]
+    
