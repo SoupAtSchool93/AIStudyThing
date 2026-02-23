@@ -1,4 +1,7 @@
 import random
+def test():
+    """testing function, """
+    print("This is a test function, functions.py is imported!")
 def ask_multi_choice(question_class):
     """
     ask a multi choice question from content.py
