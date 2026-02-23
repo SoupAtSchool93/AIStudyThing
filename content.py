@@ -6,22 +6,29 @@ if __name__ == "__main__":
 
 class questions():
     class multi_choice():
-        def test_question():
-            question = "Test Qestion"
-            wrong_answers = ["Wrong Answer 1", "Wrong Answer 2", "Wrong Answer 3"]
-            correct_answer = "Correct Answer"
+        test_question = {
+            "question":"Test Question",
+            "wrong_answers":["Wrong Answer 1", "Wrong Answer 2", "Wrong Answer 3"],
+            "correct_answer":"Correct Answer"
+        }
         class normal_questions():
-            def question1():
-                question = "What is an example of Unsupervised learning? Filtering Emails, Diagnosing conditions, Video Game Recommendation, or Loan Approval prediction?"
-                wrong_answers = ["Filtering emails","Diagnosing conditions","Loan Approval prediction"]
-                correct_answer = "Video Game Recommendation"
-                
+            question1 = {
+                "question": "What is an example of Unsupervised learning?",
+                "wrong_answers": ["Filtering emails","Diagnosing conditions","Loan Approval prediction"],
+                "correct_answer": "Video Game Recommendation"
+            }
+            question2 = {
+                "question": "What is the difference between supervised and unsupervised learning?",
+                "wrong_answers": ["Unsupervised uses labeled data to predict", "Both are the same", "Supervised clusters data"],
+                "right_answer":"Supervised uses labeled data"
+            }
         class trick_questions():
-            def question1():
-                question = "What year was the first turing test? 1961, 1965, 1969, or 1963?"
-                wrong_answers = ["1961","1965","1969","1963"]
-                correct_answer = "1950"
+            question1 = {
+                "question": "What year was the first turing test? 1961, 1965, 1969, or 1963?",
+                "wrong_answers": ["1961","1965","1969","1963"],
+                "correct_answer": "1950"
+            }
     class written_answer():
-        def test_question():
-            question = ""
-            answers = ["","",""]
+        test_question = {
+            
+        }
