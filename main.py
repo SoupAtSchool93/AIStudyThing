@@ -1,4 +1,6 @@
 import time
+import content
+import functions
 name = ""
 score = 0
 mode = 1
@@ -30,4 +32,5 @@ def start():
 
 def level1_1():
     if mode == 2:
-        
+        print()
+print(content.questions.test_question.question)
