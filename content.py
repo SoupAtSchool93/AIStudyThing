@@ -15,6 +15,7 @@ class questions():
                 question = "What is an example of Unsupervised learning? Filtering Emails, Diagnosing conditions, Video Game Recommendation, or Loan Approval prediction?"
                 wrong_answers = ["Filtering emails","Diagnosing conditions","Loan Approval prediction"]
                 correct_answer = "Video Game Recommendation"
+                
         class trick_questions():
             def question1():
                 question = "What year was the first turing test? 1961, 1965, 1969, or 1963?"
