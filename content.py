@@ -12,13 +12,13 @@ class questions():
             correct_answer = "Correct Answer"
         class normal_questions():
             class question1():
-                question = ""
-                wrong_answers = ["","",""]
-                correct_answer = ""
+                question = "What is an example of Unsupervised learning? Filtering Emails, Diagnosing conditions, Video Game Recommendation, or Loan Approval prediction?"
+                wrong_answers = ["Filtering emails","Diagnosing conditions","Loan Approval prediction"]
+                correct_answer = "Video Game Recommendation"
         class trick_questions():
             class question1():
                 question = "What year was the first turing test? 1961, 1965, 1969, or 1963?"
-                wrong_answers = ["1961","1965","1969", "1963"]
+                wrong_answers = ["1961","1965","1969","1963"]
                 correct_answer = "1950"
     class written_answer():
         class test_question():
