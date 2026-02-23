@@ -17,7 +17,7 @@ class questions():
                 correct_answer = ""
         class trick_questions():
             class question1():
-                question = ""
+                question = "What date was the perceptron tested "
                 wrong_answers = ["","",""]
                 correct_answer = ""
     class written_answer():
