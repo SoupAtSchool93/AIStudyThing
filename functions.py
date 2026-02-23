@@ -8,12 +8,13 @@ def ask_multi_choice(question_class):
     input question class should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
-    question = question_class()
+    question = question_class
     print(question.question)
     counter = 1
     choices = []
-    for i in question.choices:
+    for i in question.wrong_answers:
         choices.append(i)
+    choices.append(question.correct_answer)
     random.shuffle(choices)
     for i in range(len(choices)):
         print(f"{counter}. {choices[i]}")
@@ -21,10 +22,10 @@ def ask_multi_choice(question_class):
     answered = False
     while not answered:
         answer = int(input("Answer (number as shown):"))-1
-    if answer == choices[question.answer]:
+    if answer == choices.index(question.correct_answer):
         print("Correct!")
         return [True, choices[answer]]
-    elif not answer == choices[question.answer]:
+    elif not answer == choices.index(question.correct_answer):
         print("Wrong!")
         return [False, choices[answer]]
 def ask_written(question_class):
