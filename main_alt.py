@@ -1,3 +1,7 @@
+"""
+This is just an alternate main script made by ryder, since the OG main script isnt mine and I wanted to write one.
+
+"""
 from content import questions
 import functions
 import random
