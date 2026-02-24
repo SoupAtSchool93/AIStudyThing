@@ -98,6 +98,6 @@ valid = [k for k,v in questions.multi_choice.normal_questions.__dict__.items()
 while True:
     question = random.choice(valid)
     if question not in done_ids:
-        functions.ask_multi_choice(questions.multi_choice.normal_questions.__dict__[question])
+        ask_multi_choice(questions.multi_choice.normal_questions.__dict__[question])
         done_ids.append(question)
         break
