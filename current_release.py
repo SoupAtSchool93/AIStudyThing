@@ -43,7 +43,7 @@ def ask_multi_choice(question_dir=dir):
     input question dir should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
-    zequestion = eval("questions.multi_choice."+question_dir)
+    zequestion = question_dir
     print(zequestion["question"])
     counter = 1
     choices = []
@@ -78,15 +78,15 @@ def ask_written(question_dir=dir):
     input question dir should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
-    zequestion = eval("questions.written_answer."+question_dir)
+    zequestion = question_dir
     print(zequestion["question"])
     answer = input("<Answer> =  ")
-    if answer.lower().strip() == zequestion["correct_answer"].lower().strip():
+    if answer.lower().strip() == zequestion["correct_answers"][0].lower().strip():
         print("Right.")
         return [True, answer]
     else:
         print("Wrong.")
-        return [False, answer, zequestion["correct_answer"]]
+        return [False, answer, zequestion["correct_answers"][0]]
 
 #main_alt.py is pasted here, testing purposes.
 done_ids = []
