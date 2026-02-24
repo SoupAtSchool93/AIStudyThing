@@ -4,7 +4,7 @@ def test():
     print("This is a test function, functions.py is imported!")
 def ask_multi_choice(question_dir):
     """
-    ask a multi choice question from content.py
+    ask a multi choice question from content.py, but when finished will just pull from within main.py
     input question dir should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
@@ -36,11 +36,19 @@ def ask_multi_choice(question_dir):
         return [True, choices[answer]]
     else:
         print("Wrong!")
-        return [False, choices[answer]]
+        return [False, choices[answer], zequestion["correct_answer"]]
 def ask_written(question_dir):
     """
-    ask a written question from content.py
+    ask a written question from content.py, but when finished will just pull from within main.py
     input question dir should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
-    
+    zequestion = eval("questions.written_answer."+question_dir)
+    print(zequestion["question"])
+    answer = input("<Answer> =  ")
+    if answer.lower().strip() == zequestion["correct_answer"].lower().strip():
+        print("Right.")
+        return [True, answer]
+    else:
+        print("Wrong.")
+        return [False, answer, zequestion["correct_answer"]]    
