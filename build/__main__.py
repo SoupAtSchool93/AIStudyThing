@@ -74,3 +74,6 @@ elif percentage >= 60:
 else:
     letter = "F"
 print(f"Score: {score}/{ammt_to_do}: {percentage}% ({letter})")
+input("Press [Enter] to exit.")
+os.system("cls" if os.name == "nt" else "clear")
+exit()
