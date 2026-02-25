@@ -41,6 +41,11 @@ class questions(): #the actual content
                 "wrong_answers":["True"],
                 "correct_answer":"False"
             }
+            question4 = {
+                "id":"1.1.4",
+                "question":"What is the purpose of AI? To serve us in every concieveable way, Mimic human-like intelligence, create images, hack the government.",
+                "correct_answer":[" Mimic human-like intelligence"]
+            }
         class trick_questions():
             question1 = {
                 "id":"1.2.1",
@@ -70,8 +75,8 @@ class questions(): #the actual content
                 "question":"What is AGI?",
                 "correct_answer":["Artificial General Intelligence"]
             }
-            question4 = {
-                "id":"2.1.4",
+            question = {
+                "id":"2.1.",
                 "question":"",
                 "correct_answer":[""]
             }
