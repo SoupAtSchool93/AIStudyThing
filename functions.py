@@ -8,7 +8,7 @@ def ask_multi_choice(question_dir):
     input question dir should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
-    zequestion = eval("questions.multi_choice."+question_dir)
+    zequestion = question_dir
     print(zequestion["question"])
     counter = 1
     choices = []
