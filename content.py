@@ -62,6 +62,16 @@ class questions(): #the actual content
             }
             question2 = {
                 "id":"2.1.2",
-                "question":"question 2, to be implemented",
+                "question":"",
                 "correct_answer":["answer"],
+            }
+            question3 = {
+                "id":"2.1.3",
+                "question":"What is AGI?",
+                "correct_answer":["Artificial General Intelligence"]
+            }
+            question4 = {
+                "id":"2.1.4",
+                "question":"",
+                "correct_answer":[""]
             }
