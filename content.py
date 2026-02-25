@@ -15,7 +15,7 @@ so 1.0.1 would be multi choice test question,
 
 
 class questions(): #the actual content
-    class multi_choice(): #multiple choice stuff
+    class multi_choice(): #multiple choice stuff, formatting is not the same as written answer, john.
         test_question = {
             "id":"1.0.1",
             "question":"Test Question",
@@ -49,8 +49,9 @@ class questions(): #the actual content
             }
             question5 = {
                 "id":"1.1.5",
-                "question":"What mistake did google make in 2018? Have syntax errors, non-representative sampling, promote racism, or using wrong interpolation laws.",
-                "correct_answer":["non-representative sampling"]
+                "question":"What mistake did google make in 2018?",
+                "wrong_answers":["Have syntax errors", "Promote racism", "Using wrong interpolation laws"],
+                "correct_answer":"non-representative sampling"
             }
         class trick_questions():
             question1 = {
@@ -59,7 +60,7 @@ class questions(): #the actual content
                 "wrong_answers": ["1961","1965","1969","1963"],
                 "correct_answer": "1950" 
             }
-    class written_answer(): #written answer stuff
+    class written_answer(): #written answer stuff, formatting is not the same as multiple choice, john.
         test_question = {
             "id":"2.0.1",
             "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
