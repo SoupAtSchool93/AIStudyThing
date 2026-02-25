@@ -1,7 +1,7 @@
 if __name__ == "__main__":
-    print("""Why are you running this?
-          This is the content script.
-          dummy""")
+    print("""   Why are you running this?
+   This is the content script.
+   dummy""")
     input("Press [Enter] to exit.")
 
 class questions():
@@ -24,11 +24,12 @@ class questions():
             }
         class trick_questions():
             question1 = {
-                "question": "What year was the first turing test? 1961, 1965, 1969, or 1963?",
+                "question": "What year was the first turing test?",
                 "wrong_answers": ["1961","1965","1969","1963"],
                 "correct_answer": "1950"
             }
     class written_answer():
         test_question = {
-            
+            "question":"Test Question, answer is test",
+            "correct_answer":"test",
         }
