@@ -9,7 +9,7 @@ score = 0
 done_questions = 0
 curr_question = 1
 # toggle debugging output for skipped questions
-debug = False  # set to True during development to see why questions are skipped
+debug = False
 
 #get some initial stuff, and welcome message
 os.system("cls" if os.name == "nt" else "clear")
