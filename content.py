@@ -86,3 +86,9 @@ class questions(): #the actual content
                 "question":"",
                 "correct_answer":[""]
             }
+            question = {
+                "id":"2.1.",
+                "question":"",
+                "wrong_answers":"",
+                "correct_answer":[""]
+            }
