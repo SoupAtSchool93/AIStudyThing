@@ -57,8 +57,8 @@ class questions(): #the actual content
         class normal_questions():
             question1 = {
             "id":"2.1.1",
-            "question":"",
-            "correct_answer":[""] 
+            "question":" Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning (ML), Computer Vision, or Data Science?",
+            "correct_answer":["Data Science"]
             }
             question2 = {
                 "id":"2.1.2",
