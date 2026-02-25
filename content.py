@@ -30,7 +30,7 @@ class questions(): #the actual content
             }
     class written_answer(): #written answer stuff
         test_question = {
-            "question":"Test Question, answer is test",
+            "question":"What is ",
             "correct_answer":"test",
         }
         class normal_questions():
