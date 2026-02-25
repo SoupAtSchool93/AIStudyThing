@@ -44,14 +44,19 @@ class questions(): #the actual content
             question4 = {
                 "id":"1.1.4",
                 "question":"What is the purpose of AI? To serve us in every concieveable way, Mimic human-like intelligence, create images, hack the government.",
-                "correct_answer":[" Mimic human-like intelligence"]
+                "correct_answer":["Mimic human-like intelligence"]
+            }
+            question5 = {
+                "id":"1.1.5",
+                "question":"What mistake did google make in 2018? Have syntax errors, non-representative sampling, promote racism, or using wrong interpolation laws.",
+                "correct_answer":["non-representative sampling"]
             }
         class trick_questions():
             question1 = {
                 "id":"1.2.1",
                 "question": "What year was the first turing test?",
                 "wrong_answers": ["1961","1965","1969","1963"],
-                "correct_answer": "1950"
+                "correct_answer": "1950" 
             }
     class written_answer(): #written answer stuff
         test_question = {
