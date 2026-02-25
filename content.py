@@ -43,8 +43,9 @@ class questions(): #the actual content
             }
             question4 = {
                 "id":"1.1.4",
-                "question":"What is the purpose of AI? To serve us in every concieveable way, Mimic human-like intelligence, create images, hack the government.",
-                "correct_answer":["Mimic human-like intelligence"]
+                "question":"What is the purpose of AI? To serve us in every concieveable way",
+                "wrong_answers":["To serve us in every concieveable way", "Take our jobs", "Hack the government"],
+                "correct_answer":"Mimic human-like intelligence"
             }
             question5 = {
                 "id":"1.1.5",
