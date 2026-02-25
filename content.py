@@ -30,11 +30,11 @@ class questions(): #the actual content
             }
     class written_answer(): #written answer stuff
         test_question = {
-            "question":"What is ",
-            "correct_answer":"test",
+            "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
+            "correct_answer":["perceptron"] 
         }
         class normal_questions():
             question1 = {
             "question":"question 1, to be implemented",
-            "correct_answer":"answer",
+            "correct_answer":["answer"],
             }
