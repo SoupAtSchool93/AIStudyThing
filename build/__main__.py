@@ -1,6 +1,4 @@
-"""
-This is just an alternate main script made by ryder, since the OG main script isnt mine and I wanted to write one.
-"""
+#This is __main__ for a reason. Changing the name will break the build.sh script which would be very much less than good.
 #imports
 from content import questions; import functions; import random; import os; import time
 # variables
