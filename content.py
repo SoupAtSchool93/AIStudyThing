@@ -22,6 +22,11 @@ class questions(): #the actual content
                 "wrong_answers": ["Unsupervised uses labeled data to predict", "Both are the same", "Supervised clusters data"],
                 "correct_answer":"Supervised uses labeled data"
             }
+            question3 = {
+            "question":"True or False: A Rational agent is a agent that makes continuous steps to get from point A to point B.",
+            "wrong_answers":["True"],
+            "correct_answer":"False"
+            }
         class trick_questions():
             question1 = {
                 "question": "What year was the first turing test?",
@@ -33,9 +38,9 @@ class questions(): #the actual content
             "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
             "correct_answer":["perceptron"] 
         }    
-        test_question1 = {
+        question1 = {
             "question":"True or False: A Rational agent is a agent that makes continuous steps to get from point A to point B.",
-            "correct_answer":["True"] 
+            "correct_answer":["False"] 
         }
         class normal_questions():
             question1 = {
