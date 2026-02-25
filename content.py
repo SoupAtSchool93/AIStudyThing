@@ -32,6 +32,10 @@ class questions(): #the actual content
         test_question = {
             "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
             "correct_answer":["perceptron"] 
+        }    
+        test_question1 = {
+            "question":"True or False: A Rational agent is a agent that makes continuous steps to get from point A to point B.",
+            "correct_answer":["True"] 
         }
         class normal_questions():
             question1 = {
