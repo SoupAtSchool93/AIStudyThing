@@ -1,14 +1,15 @@
+import content
 import random
 def test():
     """testing function, for making sure importing is working"""
     print("This is a test function, functions.py is imported!")
-def ask_multi_choice(question_dir):
+def ask_multi_choice(question_dir=dir):
     """
     ask a multi choice question from content.py, but when finished will just pull from within main.py
     input question dir should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
-    zequestion = eval("questions.multi_choice."+question_dir)
+    zequestion = question_dir
     print(zequestion["question"])
     counter = 1
     choices = []
@@ -37,13 +38,13 @@ def ask_multi_choice(question_dir):
     else:
         print("Wrong!")
         return [False, choices[answer], zequestion["correct_answer"]]
-def ask_written(question_dir):
+def ask_written(question_dir=dir):
     """
     ask a written question from content.py, but when finished will just pull from within main.py
     input question dir should be like "normal_questions.question1"
     returns if user got question right, and answer they picked in list: [right=bool, answer=str]
     """
-    zequestion = eval("questions.written_answer."+question_dir)
+    zequestion = question_dir
     print(zequestion["question"])
     answer = input("<Answer> =  ")
     if answer.lower().strip() == zequestion["correct_answer"].lower().strip():
