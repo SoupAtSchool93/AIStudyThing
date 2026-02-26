@@ -61,13 +61,13 @@ class questions(): #the actual content
                 "correct_answer":"non-representative sampling"
             }
             question6 = {
-                "id":"1.1.6"
+                "id":"1.1.6",
                 "question": "What year was the first turing test?",
                 "wrong_answers": ["1961","1965","1969","1963"],
                 "correct_answer": "1950" 
             }
             question7 = {
-                "id":"1.1.7"
+                "id":"1.1.7",
                 "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
                 "wrong_answers":["logic theorist","playstation 3","ChatGPT"]
                 "correct_answer":["perceptron"] 
@@ -75,7 +75,7 @@ class questions(): #the actual content
     class written_answer(): #written answer stuff, formatting is not the same as multiple choice, john.
         test_question = { 
             "id":"2.0.1",
-            "question":"Not implemented"
+            "question":"Not implemented",
             "correct_answer":[""]
         }    
         class normal_questions():
