@@ -41,6 +41,12 @@ class questions(): #the actual content
                 "wrong_answers":["True"],
                 "correct_answer":"False"
             }
+            question3part2 = {
+                "id":"1.1.3",
+                "question":"True or False: Part-of-Speech (POS) tagging is a Natural Language Processing (NLP) process that assigns grammatical categories—such as nouns, verbs, adjectives, and adverbs—to each word (token) in a text based on its definition and context.",
+                "wrong_answers":["False"],
+                "correct_answer":"True"
+            }
             question4 = {
                 "id":"1.1.4",
                 "question":"What is the purpose of AI? To serve us in every concieveable way",
