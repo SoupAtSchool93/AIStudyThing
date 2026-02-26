@@ -11,6 +11,7 @@ first digit is 1 if multi choice, 2 if written answer
 3rd is number of question;
 so 1.0.1 would be multi choice test question,
 2.1.3 would be written answer normal question 3, etc.
+BTW John, dont just make a written question thats just "Whats _? _, _, _, or _? Those are multiple choice and should not be a written answer."
 """
 
 
@@ -59,18 +60,23 @@ class questions(): #the actual content
                 "wrong_answers":["Have syntax errors", "Promote racism", "Using wrong interpolation laws"],
                 "correct_answer":"non-representative sampling"
             }
-        class trick_questions():
-            question1 = {
-                "id":"1.2.1",
+            question6 = {
+                "id":"1.1.6"
                 "question": "What year was the first turing test?",
                 "wrong_answers": ["1961","1965","1969","1963"],
                 "correct_answer": "1950" 
             }
+            question7 = {
+                "id":"1.1.7"
+                "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
+                "wrong_answers":["logic theorist","playstation 3","ChatGPT"]
+                "correct_answer":["perceptron"] 
+            }
     class written_answer(): #written answer stuff, formatting is not the same as multiple choice, john.
-        test_question = {
+        test_question = { 
             "id":"2.0.1",
-            "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
-            "correct_answer":["perceptron"] 
+            "question":"Not implemented"
+            "correct_answer":[""]
         }    
         class normal_questions():
             question1 = {
@@ -80,22 +86,21 @@ class questions(): #the actual content
             }
             question2 = {
                 "id":"2.1.2",
-                "question":"",
-                "correct_answer":["answer"],
+                "question":"What does AI stand for?",
+                "correct_answer":["artificial intelligence"],
             }
             question3 = {
                 "id":"2.1.3",
-                "question":"What is AGI?",
-                "correct_answer":["Artificial General Intelligence"]
+                "question":"What does AGI stand for?",
+                "correct_answer":["artificial general intelligence"]
             }
-            question = {
-                "id":"2.1.",
-                "question":"",
-                "correct_answer":[""]
+            question4 = {
+                "id":"2.1.4",
+                "question":"What does ML stand for?",
+                "correct_answer":["Machine Learning"]
             }
-            question = {
-                "id":"2.1.",
-                "question":"",
-                "wrong_answers":"",
+            question5 = {
+                "id":"2.1.5",
+                "question":"Not Implemented",
                 "correct_answer":[""]
             }

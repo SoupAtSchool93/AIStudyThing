@@ -37,7 +37,7 @@ while done_questions < ammt_to_do:
             # if we've tried too many times give the user options
             if failed_grab_counter > 100:
                 print(
-                    f"The question grabber has failed to find a new unfinished question in {failed_grab_counter} attempts, exit or reset done question?"
+                    f"The question grabber has failed to find a new unfinished question in {failed_grab_counter} attempts, exit or reset done questions?"
                 )
                 ans = input("(reset/exit/results)>").lower()
                 if ans == "reset":
