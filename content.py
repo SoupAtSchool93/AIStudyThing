@@ -60,8 +60,26 @@ class questions(): #the actual content
                 "wrong_answers":["Have syntax errors", "Promote racism", "Using wrong interpolation laws"],
                 "correct_answer":"non-representative sampling"
             }
+<<<<<<< HEAD
             question6 = {
                 "id":"1.1.6",
+=======
+            question = {
+                "id":"1.1.6",
+                "question":"What set the benchmark for determining AI intelligence?",
+                "wrong_answers":["perceptron", "AlphaGo", ""],
+                "correct_answer":""
+            }
+            question = {
+                "id":"1.1.",
+                "question":"",
+                "wrong_answers":["", "", ""],
+                "correct_answer":""
+            }
+        class trick_questions():
+            question1 = {
+                "id":"1.2.1",
+>>>>>>> 8e37615 (adding a question :))
                 "question": "What year was the first turing test?",
                 "wrong_answers": ["1961","1965","1969","1963"],
                 "correct_answer": "1950" 
