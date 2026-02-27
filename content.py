@@ -120,6 +120,6 @@ class questions(): #the actual content
             }
             question5 = {
                 "id":"2.1.5",
-                "question":"Not Implemented",
-                "correct_answer":[""]
+                "question":"Which one is an AI career? An AI Research Specialist, Data Engineer, Cybersecurity Specialist, or an UX (User Experience) Designer",
+                "correct_answer":["AI Research Specialist"]
             }
