@@ -126,5 +126,5 @@ class questions(): #the actual content
             question6 = {
                 "id":"2.1.6",
                 "question":"What is an example of intelligent behavior? A, A standard vending machine B, An automated cash register C, A predictive recommendation engine, or D, A simple barcode scanner?)"
-                "correct_answer":["A predictive recommendation engine"]
+                "correct_answer";["A predictive recommendation engine"]
             }
