@@ -60,7 +60,7 @@ class questions(): #the actual content
                 "wrong_answers":["Have syntax errors", "Promote racism", "Using wrong interpolation laws"],
                 "correct_answer":"non-representative sampling"
             }
-            question = {
+            question6 = {
                 "id":"1.1.6",
                 "question":"What set the benchmark for determining AI intelligence?",
                 "wrong_answers":["perceptron", "AlphaGo", "Logic Theorist"],
@@ -122,4 +122,9 @@ class questions(): #the actual content
                 "id":"2.1.5",
                 "question":"Which one is an AI career? An AI Research Specialist, Data Engineer, Cybersecurity Specialist, or an UX (User Experience) Designer",
                 "correct_answer":["AI Research Specialist"]
+            }
+            question6 = {
+                "id":"2.1.6",
+                "question":"What is an example of intelligent behavior? A, A standard vending machine B, An automated cash register C, A predictive recommendation engine, or D, A simple barcode scanner?)"
+                "correct_answer"["A predictive recommendation engine"]
             }
