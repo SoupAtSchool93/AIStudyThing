@@ -60,7 +60,7 @@ class questions(): #the actual content
                 "wrong_answers":["Have syntax errors", "Promote racism", "Using wrong interpolation laws"],
                 "correct_answer":"non-representative sampling"
             }
-            question6 = {
+            question = {
                 "id":"1.1.6",
                 "question":"What set the benchmark for determining AI intelligence?",
                 "wrong_answers":["perceptron", "AlphaGo", "Logic Theorist"],
