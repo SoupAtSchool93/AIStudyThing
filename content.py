@@ -67,7 +67,7 @@ class questions(): #the actual content
                 "id":"1.2.1",
                 "question": "What year was the first turing test?",
                 "wrong_answers": ["1961","1965","1969","1963"],
-                "correct_answer": "1950" 
+                "correct_answer": ["1950"] 
             }
             question7 = {
                 "id":"1.1.7",
@@ -84,31 +84,31 @@ class questions(): #the actual content
         class normal_questions():
             question1 = { #for the last time john dont put these kinds of questions in, they're just multi choice with extra steps.
             "id":"2.1.1",
-            "question":"Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning, Computer Vision, or Data Science?"
-            "correct_answer"["Data Science"]
+            "question":["Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning, Computer Vision, or Data Science?"],
+            "correct_answer":["Data Science"]
             }
             question2 = {
                 "id":"2.1.2",
-                "question":"What does AI stand for?",
+                "question":["What does AI stand for?"],
                 "correct_answer":["artificial intelligence"],
             }
             question3 = {
                 "id":"2.1.3",
-                "question":"What does AGI stand for?",
+                "question":["What does AGI stand for?"],
                 "correct_answer":["artificial general intelligence"]
             }
             question4 = {
                 "id":"2.1.4",
-                "question":"What does ML stand for?",
+                "question":["What does ML stand for?"],
                 "correct_answer":["Machine Learning"]
             }
             question5 = {
                 "id":"2.1.5",
-                "question":"Which one is an AI career? An AI Research Specialist, Data Engineer, Cybersecurity Specialist, or an UX (User Experience) Designer",
+                "question":["Which one is an AI career? An AI Research Specialist, Data Engineer, Cybersecurity Specialist, or an UX (User Experience) Designer"],
                 "correct_answer":["AI Research Specialist"]
             }
             question6 = {
                 "id":"2.1.6",
-                "question":"What is an example of intelligent behavior? A, A standard vending machine B, An automated cash register C, A predictive recommendation engine, or D, A simple barcode scanner?)",
+                "question":["What is an example of intelligent behavior? A, A standard vending machine B, An automated cash register C, A predictive recommendation engine, or D, A simple barcode scanner?"],
                 "correct_answer":["A predictive recommendation engine"]
             }
