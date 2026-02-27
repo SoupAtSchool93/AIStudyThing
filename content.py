@@ -100,7 +100,7 @@ class questions(): #the actual content
         class normal_questions():
             question1 = { #for the last time john dont put these kinds of questions in, they're just multi choice with extra steps.
             "id":"2.1.1",
-            "question":" Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning (ML), Computer Vision, or Data Science?",
+            "question":"Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning, Computer Vision, or Data Science?"
             "correct_answer":["Data Science"]
             }
             question2 = {
