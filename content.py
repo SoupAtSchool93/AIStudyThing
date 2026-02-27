@@ -1,8 +1,4 @@
-if __name__ == "__main__": #make sure this is not run directly
-    print("""   Why are you running this?
-   This is the content script.
-   dummy""")
-    input("Press [Enter] to exit.")
+
 
 """
 ID system works as follows:
