@@ -15,9 +15,9 @@ class questions(): #the actual content
     class multi_choice(): #multiple choice stuff, formatting is not the same as written answer, john.
         test_question = {
             "id":"1.0.1",
-            "question":"Test Question",
-            "wrong_answers":["Wrong Answer 1", "Wrong Answer 2", "Wrong Answer 3"],
-            "correct_answer":"Correct Answer"
+            "question":"",
+            "wrong_answers":[],
+            "correct_answer":"correct"
         }
         class normal_questions():
             question1 = {
@@ -62,6 +62,12 @@ class questions(): #the actual content
                 "wrong_answers":["perceptron", "AlphaGo", "Logic Theorist"],
                 "correct_answer":"Turing Test"
             }
+            question7 = { #Yet another written answer I've ported over since it was just a worse multiple choice. "stop doing this, john." says the AI autocomplete.
+            "id":"1.1.7",
+            "question":"Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning, Computer Vision, or Data Science?",
+            "wrong_answers":[],
+            "correct_answer":"Data Science"
+            }
         class trick_questions():
             question1 = {
                 "id":"1.2.1",
@@ -69,8 +75,8 @@ class questions(): #the actual content
                 "wrong_answers": ["1961","1965","1969","1963"],
                 "correct_answer": ["1950"] 
             }
-            question7 = {
-                "id":"1.1.7",
+            question8 = {
+                "id":"1.1.8",
                 "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
                 "wrong_answers":["logic theorist","playstation 3","ChatGPT"],
                 "correct_answer":"perceptron"
@@ -81,10 +87,10 @@ class questions(): #the actual content
             "question":"Not implemented",
             "correct_answer":[""]
         }    
-        class normal_questions():
-            question1 = { #for the last time john dont put these kinds of questions in, they're just multi choice with extra steps.
+        class normal_questions():#JOHN STOP PUTTING QUESTIONS IN HERE THAT ARE JUST MULTIPLE CHOICE THAT YOU HAVE TO TYPE. also the question doesnt go in a list.
+            question1 = {
             "id":"2.1.1",
-            "question":["Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning, Computer Vision, or Data Science?"],
+            "question":[""],
             "correct_answer":["Data Science"]
             }
             question2 = {
