@@ -1,8 +1,4 @@
-if __name__ == "__main__": #make sure this is not run directly
-    print("""   Why are you running this?
-   This is the content script.
-   dummy""")
-    input("Press [Enter] to exit.")
+
 
 """
 ID system works as follows:
@@ -11,6 +7,7 @@ first digit is 1 if multi choice, 2 if written answer
 3rd is number of question;
 so 1.0.1 would be multi choice test question,
 2.1.3 would be written answer normal question 3, etc.
+BTW John, dont just make a written question thats just "Whats _? _, _, _, or _? Those are multiple choice and should not be a written answer."
 """
 
 
@@ -41,6 +38,12 @@ class questions(): #the actual content
                 "wrong_answers":["True"],
                 "correct_answer":"False"
             }
+            question3part2 = {
+                "id":"1.1.3",
+                "question":"True or False: Part-of-Speech (POS) tagging is a Natural Language Processing (NLP) process that assigns grammatical categories—such as nouns, verbs, adjectives, and adverbs—to each word (token) in a text based on its definition and context.",
+                "wrong_answers":["False"],
+                "correct_answer":"True"
+            }
             question4 = {
                 "id":"1.1.4",
                 "question":"What is the purpose of AI? To serve us in every concieveable way",
@@ -53,37 +56,59 @@ class questions(): #the actual content
                 "wrong_answers":["Have syntax errors", "Promote racism", "Using wrong interpolation laws"],
                 "correct_answer":"non-representative sampling"
             }
+            question6 = {
+                "id":"1.1.6",
+                "question":"What set the benchmark for determining AI intelligence?",
+                "wrong_answers":["perceptron", "AlphaGo", "Logic Theorist"],
+                "correct_answer":"Turing Test"
+            }
         class trick_questions():
             question1 = {
                 "id":"1.2.1",
                 "question": "What year was the first turing test?",
                 "wrong_answers": ["1961","1965","1969","1963"],
-                "correct_answer": "1950" 
+                "correct_answer": ["1950"] 
+            }
+            question7 = {
+                "id":"1.1.7",
+                "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
+                "wrong_answers":["logic theorist","playstation 3","ChatGPT"],
+                "correct_answer":"perceptron"
             }
     class written_answer(): #written answer stuff, formatting is not the same as multiple choice, john.
-        test_question = {
+        test_question = { 
             "id":"2.0.1",
-            "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
-            "correct_answer":["perceptron"] 
+            "question":"Not implemented",
+            "correct_answer":[""]
         }    
         class normal_questions():
-            question1 = {
+            question1 = { #for the last time john dont put these kinds of questions in, they're just multi choice with extra steps.
             "id":"2.1.1",
-            "question":" Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning (ML), Computer Vision, or Data Science?",
+            "question":["Which thing is not a subdomain of AI? Natural Language Processing, Machine Learning, Computer Vision, or Data Science?"],
             "correct_answer":["Data Science"]
             }
             question2 = {
                 "id":"2.1.2",
-                "question":"",
-                "correct_answer":["answer"],
+                "question":["What does AI stand for?"],
+                "correct_answer":["artificial intelligence"],
             }
             question3 = {
                 "id":"2.1.3",
-                "question":"What is AGI?",
-                "correct_answer":["Artificial General Intelligence"]
+                "question":["What does AGI stand for?"],
+                "correct_answer":["artificial general intelligence"]
             }
-            question = {
-                "id":"2.1.",
-                "question":"",
-                "correct_answer":[""]
+            question4 = {
+                "id":"2.1.4",
+                "question":["What does ML stand for?"],
+                "correct_answer":["Machine Learning"]
+            }
+            question5 = {
+                "id":"2.1.5",
+                "question":["Which one is an AI career? An AI Research Specialist, Data Engineer, Cybersecurity Specialist, or an UX (User Experience) Designer"],
+                "correct_answer":["AI Research Specialist"]
+            }
+            question6 = {
+                "id":"2.1.6",
+                "question":["What is an example of intelligent behavior? A, A standard vending machine B, An automated cash register C, A predictive recommendation engine, or D, A simple barcode scanner?"],
+                "correct_answer":["A predictive recommendation engine"]
             }
