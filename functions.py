@@ -1,8 +1,7 @@
 import content
 import random
-def test():
-    """testing function, for making sure importing is working"""
-    print("This is a test function, functions.py is imported!")
+if __name__ == "__main__": #dude. dont run this file.
+    print("Dont run this, it is meant for importing")
 def ask_multi_choice(question_dir=dir):
     """
     ask a multi choice question from content.py, but when finished will just pull from within main.py
@@ -47,7 +46,7 @@ def ask_written(question_dir=dir):
     zequestion = question_dir
     print(zequestion["question"])
     answer = input("<Answer> =  ")
-    if answer.lower().strip() == zequestion["correct_answer"].lower().strip():
+    if answer.lower().strip() == zequestion["correct_answer"][0].lower().strip():
         print("Right.")
         return [True, answer]
     else:

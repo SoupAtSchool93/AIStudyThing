@@ -73,7 +73,7 @@ class questions(): #the actual content
                 "id":"1.1.7",
                 "question":"What is the machine that was the first implementation of an artificial neural network designed to learn from experience, rather than being explicitly programmed for every task called?",
                 "wrong_answers":["logic theorist","playstation 3","ChatGPT"],
-                "correct_answer":["perceptron"] 
+                "correct_answer":"perceptron"
             }
     class written_answer(): #written answer stuff, formatting is not the same as multiple choice, john.
         test_question = { 

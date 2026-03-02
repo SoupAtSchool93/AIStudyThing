@@ -1,5 +1,5 @@
 """
-This is just an alternate main script made by ryder, since the OG main script isnt mine and I wanted to write one.
+This is the main script; but this is just a part to be used in writing the code, run AIStudyThing.pyz instead
 """
 #imports
 from content import questions; import functions; import random; import os; import time
@@ -15,24 +15,33 @@ debug = False  # set to True during development to see why questions are skipped
 
 #get some initial stuff, and welcome message
 os.system("cls" if os.name == "nt" else "clear")
-print("Welcome to the very much complete AI study thing (1.1)")
+print("Welcome to the very much complete AI study thing (section 1.1)")
 ammt_to_do = int(input("Ammount of questions to do: "))
 
 #ze main loop
 while done_questions < ammt_to_do:
     os.system("cls" if os.name == "nt" else "clear")
-    valid = [k for k,v in questions.multi_choice.normal_questions.__dict__.items()
-             if isinstance(v, dict) and not k.startswith("__")]
+    if random.choice([True, True, False]): # 1 in 3 chance to do a written answer question
+        valid = [k for k,v in questions.multi_choice.normal_questions.__dict__.items()
+        if isinstance(v, dict) and not k.startswith("__")]
+        qtype = "choice"
+    else:
+        valid = [k for k,v in questions.written_answer.normal_questions.__dict__.items()
+        if isinstance(v, dict) and not k.startswith("__")]
+        qtype = "written"
 
     while True:
         question_key = random.choice(valid)
-        qdict = questions.multi_choice.normal_questions.__dict__[question_key]
+        if qtype == "choice":
+            qdict = questions.multi_choice.normal_questions.__dict__[question_key]
+        elif qtype == "written":
+            qdict = questions.written_answer.normal_questions.__dict__[question_key]
         qid = qdict.get("id")
 
         if qid in done_ids:
             # already asked this specific question
             if debug:
-                print(f"skipping {qid}: already in done_ids")
+                print(f"skipping question with ID {qid}: already in done_ids")
             failed_grab_counter += 1
             # if we've tried too many times give the user options
             if failed_grab_counter > 100:
@@ -54,8 +63,12 @@ while done_questions < ammt_to_do:
         # found a new question
         failed_grab_counter = 0
         print(f"Current question: {curr_question}/{ammt_to_do}")
-        if functions.ask_multi_choice(qdict)[0]:
-            score += 1
+        if qtype == "written":
+            if functions.ask_written(qdict)[0]:
+                score += 1
+        elif qtype == "choice":
+            if functions.ask_multi_choice(qdict)[0]:
+                score += 1
         done_ids.append(qid)
         done_questions += 1
         curr_question += 1
